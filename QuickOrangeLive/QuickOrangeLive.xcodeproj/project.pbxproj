@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A6A088B492C4E3153DDFEF4 /* libPods-QuickOrangeLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD608B2D56D04C47CF8E23DB /* libPods-QuickOrangeLive.a */; };
+		640019431E3C3F1A0044CF47 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019421E3C3F1A0044CF47 /* libz.tbd */; };
+		640019451E3C3F250044CF47 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019441E3C3F250044CF47 /* libbz2.tbd */; };
+		640019471E3C3F2D0044CF47 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019461E3C3F2D0044CF47 /* AudioToolbox.framework */; };
+		640019491E3C3F380044CF47 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019481E3C3F380044CF47 /* AVFoundation.framework */; };
+		6400194B1E3C3F400044CF47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6400194A1E3C3F400044CF47 /* CoreGraphics.framework */; };
+		6400194D1E3C3F490044CF47 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6400194C1E3C3F490044CF47 /* CoreMedia.framework */; };
+		6400194F1E3C3F530044CF47 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6400194E1E3C3F530044CF47 /* CoreVideo.framework */; };
+		640019511E3C3F5A0044CF47 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019501E3C3F5A0044CF47 /* MediaPlayer.framework */; };
+		640019531E3C3F6C0044CF47 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019521E3C3F6C0044CF47 /* MobileCoreServices.framework */; };
+		640019551E3C3F740044CF47 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019541E3C3F740044CF47 /* OpenGLES.framework */; };
+		640019571E3C3F830044CF47 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019561E3C3F830044CF47 /* QuartzCore.framework */; };
+		640019591E3C3F8C0044CF47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640019581E3C3F8C0044CF47 /* UIKit.framework */; };
+		6400195B1E3C3F980044CF47 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6400195A1E3C3F980044CF47 /* VideoToolbox.framework */; };
+		640019661E3C4CC90044CF47 /* OYLiveStreamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 640019651E3C4CC90044CF47 /* OYLiveStreamModel.m */; };
+		640019691E3C4D9B0044CF47 /* OYLiveRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 640019681E3C4D9B0044CF47 /* OYLiveRoomModel.m */; };
+		6400196C1E3C500A0044CF47 /* OYLiveRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6400196B1E3C500A0044CF47 /* OYLiveRoomController.m */; };
+		64115E351E4826C900F2769D /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64115E341E4826C900F2769D /* IJKMediaFramework.framework */; };
+		6412C7DC1E3F81310036CCBE /* OYZhanqiLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412C7DB1E3F81310036CCBE /* OYZhanqiLiveListModel.m */; };
+		6412C7DD1E3F88D60036CCBE /* OYLiveListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641767E41E384637002F7345 /* OYLiveListController.m */; };
+		6412C7E01E3FA6B30036CCBE /* OYQuanMinLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412C7DF1E3FA6B30036CCBE /* OYQuanMinLiveListModel.m */; };
+		64136AE41E36EAD6004FB4E8 /* OYCategoryRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64136AE31E36EAD6004FB4E8 /* OYCategoryRightCell.m */; };
+		6414E8101E3B051D002B789C /* OYLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6414E80F1E3B051D002B789C /* OYLiveListModel.m */; };
+		641767E91E3855EA002F7345 /* OYLiveListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 641767E81E3855EA002F7345 /* OYLiveListCell.m */; };
+		641767ED1E38BEEB002F7345 /* OYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 641767EC1E38BEEB002F7345 /* OYNetworkManager.m */; };
+		643DC4C61E422E12006818C7 /* OYLivePlayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 643DC4C51E422E12006818C7 /* OYLivePlayerControl.m */; };
+		644616081E3A4F70008E8055 /* NSArray+TTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 644616071E3A4F70008E8055 /* NSArray+TTLog.m */; };
+		644D351F1E35A90E005043CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D351E1E35A90E005043CC /* main.m */; };
+		644D35221E35A90E005043CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D35211E35A90E005043CC /* AppDelegate.m */; };
+		644D352D1E35A90E005043CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644D352B1E35A90E005043CC /* LaunchScreen.storyboard */; };
+		644D353F1E35B35C005043CC /* OYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D353E1E35B35C005043CC /* OYNavigationController.m */; };
+		644D35421E35B3C0005043CC /* OYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D35411E35B3C0005043CC /* OYHomeController.m */; };
+		644D35451E35B3CE005043CC /* OYCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D35441E35B3CE005043CC /* OYCategoryController.m */; };
+		644D35481E35B3F1005043CC /* OYSubscriptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D35471E35B3F1005043CC /* OYSubscriptionController.m */; };
+		644D354B1E35B41F005043CC /* OYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D354A1E35B41F005043CC /* OYTabBarController.m */; };
+		644D354D1E35E8A9005043CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644D354C1E35E8A9005043CC /* Assets.xcassets */; };
+		644D35501E35F632005043CC /* UIColor+OYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D354F1E35F632005043CC /* UIColor+OYAddition.m */; };
+		644D35551E361533005043CC /* OYCategoryLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D35541E361533005043CC /* OYCategoryLeftCell.m */; };
+		649767B21E3CE0AF00DAD792 /* OYPandaLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 649767B11E3CE0AF00DAD792 /* OYPandaLiveListModel.m */; };
+		64C458391E374CC700BD02D8 /* OYCategoryPlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C458381E374CC700BD02D8 /* OYCategoryPlatformModel.m */; };
+		64C4583C1E374CD900BD02D8 /* OYCategoryGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C4583B1E374CD900BD02D8 /* OYCategoryGameModel.m */; };
+		64C4583F1E3758E800BD02D8 /* OYCategoryGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C4583E1E3758E800BD02D8 /* OYCategoryGameCell.m */; };
+		64C9B57C1E45A23000D384CA /* OYHomeRoomListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C9B57B1E45A23000D384CA /* OYHomeRoomListModel.m */; };
+		64C9B57F1E45A52E00D384CA /* OYHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C9B57E1E45A52E00D384CA /* OYHomeCell.m */; };
+		64C9B5841E45F09B00D384CA /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 64C9B5831E45F09B00D384CA /* FZLTZCHJW--GB1-0.TTF */; };
+		64D052D81E3746C900F3CEBE /* category.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64D052D71E3746C900F3CEBE /* category.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37D243BCB51243DF16D7BB26 /* Pods-QuickOrangeLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickOrangeLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickOrangeLive/Pods-QuickOrangeLive.debug.xcconfig"; sourceTree = "<group>"; };
+		640019421E3C3F1A0044CF47 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		640019441E3C3F250044CF47 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		640019461E3C3F2D0044CF47 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		640019481E3C3F380044CF47 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6400194A1E3C3F400044CF47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6400194C1E3C3F490044CF47 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6400194E1E3C3F530044CF47 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		640019501E3C3F5A0044CF47 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		640019521E3C3F6C0044CF47 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		640019541E3C3F740044CF47 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		640019561E3C3F830044CF47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		640019581E3C3F8C0044CF47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6400195A1E3C3F980044CF47 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		640019641E3C4CC90044CF47 /* OYLiveStreamModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveStreamModel.h; sourceTree = "<group>"; };
+		640019651E3C4CC90044CF47 /* OYLiveStreamModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveStreamModel.m; sourceTree = "<group>"; };
+		640019671E3C4D9B0044CF47 /* OYLiveRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveRoomModel.h; sourceTree = "<group>"; };
+		640019681E3C4D9B0044CF47 /* OYLiveRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveRoomModel.m; sourceTree = "<group>"; };
+		6400196A1E3C500A0044CF47 /* OYLiveRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveRoomController.h; sourceTree = "<group>"; };
+		6400196B1E3C500A0044CF47 /* OYLiveRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveRoomController.m; sourceTree = "<group>"; };
+		64115E341E4826C900F2769D /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = QuickOrangeLive/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		6412C7DA1E3F81310036CCBE /* OYZhanqiLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYZhanqiLiveListModel.h; sourceTree = "<group>"; };
+		6412C7DB1E3F81310036CCBE /* OYZhanqiLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYZhanqiLiveListModel.m; sourceTree = "<group>"; };
+		6412C7DE1E3FA6B30036CCBE /* OYQuanMinLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYQuanMinLiveListModel.h; sourceTree = "<group>"; };
+		6412C7DF1E3FA6B30036CCBE /* OYQuanMinLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYQuanMinLiveListModel.m; sourceTree = "<group>"; };
+		64136AE21E36EAD6004FB4E8 /* OYCategoryRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCategoryRightCell.h; sourceTree = "<group>"; };
+		64136AE31E36EAD6004FB4E8 /* OYCategoryRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCategoryRightCell.m; sourceTree = "<group>"; };
+		6414E80E1E3B051D002B789C /* OYLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveListModel.h; sourceTree = "<group>"; };
+		6414E80F1E3B051D002B789C /* OYLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveListModel.m; sourceTree = "<group>"; };
+		641767E31E384637002F7345 /* OYLiveListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveListController.h; sourceTree = "<group>"; };
+		641767E41E384637002F7345 /* OYLiveListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveListController.m; sourceTree = "<group>"; };
+		641767E71E3855EA002F7345 /* OYLiveListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveListCell.h; sourceTree = "<group>"; };
+		641767E81E3855EA002F7345 /* OYLiveListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveListCell.m; sourceTree = "<group>"; };
+		641767EB1E38BEEB002F7345 /* OYNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYNetworkManager.h; sourceTree = "<group>"; };
+		641767EC1E38BEEB002F7345 /* OYNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYNetworkManager.m; sourceTree = "<group>"; };
+		643DC4C41E422E12006818C7 /* OYLivePlayerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLivePlayerControl.h; sourceTree = "<group>"; };
+		643DC4C51E422E12006818C7 /* OYLivePlayerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLivePlayerControl.m; sourceTree = "<group>"; };
+		644616061E3A4F70008E8055 /* NSArray+TTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TTLog.h"; sourceTree = "<group>"; };
+		644616071E3A4F70008E8055 /* NSArray+TTLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TTLog.m"; sourceTree = "<group>"; };
+		644D351A1E35A90E005043CC /* QuickOrangeLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickOrangeLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		644D351E1E35A90E005043CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		644D35201E35A90E005043CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		644D35211E35A90E005043CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		644D352C1E35A90E005043CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		644D352E1E35A90F005043CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		644D353C1E35AE00005043CC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		644D353D1E35B35C005043CC /* OYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYNavigationController.h; sourceTree = "<group>"; };
+		644D353E1E35B35C005043CC /* OYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYNavigationController.m; sourceTree = "<group>"; };
+		644D35401E35B3C0005043CC /* OYHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYHomeController.h; sourceTree = "<group>"; };
+		644D35411E35B3C0005043CC /* OYHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYHomeController.m; sourceTree = "<group>"; };
+		644D35431E35B3CE005043CC /* OYCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCategoryController.h; sourceTree = "<group>"; };
+		644D35441E35B3CE005043CC /* OYCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCategoryController.m; sourceTree = "<group>"; };
+		644D35461E35B3F1005043CC /* OYSubscriptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYSubscriptionController.h; sourceTree = "<group>"; };
+		644D35471E35B3F1005043CC /* OYSubscriptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYSubscriptionController.m; sourceTree = "<group>"; };
+		644D35491E35B41F005043CC /* OYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYTabBarController.h; sourceTree = "<group>"; };
+		644D354A1E35B41F005043CC /* OYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYTabBarController.m; sourceTree = "<group>"; };
+		644D354C1E35E8A9005043CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		644D354E1E35F632005043CC /* UIColor+OYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+OYAddition.h"; sourceTree = "<group>"; };
+		644D354F1E35F632005043CC /* UIColor+OYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OYAddition.m"; sourceTree = "<group>"; };
+		644D35511E35F6CA005043CC /* Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Additions.h; sourceTree = "<group>"; };
+		644D35531E361533005043CC /* OYCategoryLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCategoryLeftCell.h; sourceTree = "<group>"; };
+		644D35541E361533005043CC /* OYCategoryLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCategoryLeftCell.m; sourceTree = "<group>"; };
+		649767B01E3CE0AF00DAD792 /* OYPandaLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYPandaLiveListModel.h; sourceTree = "<group>"; };
+		649767B11E3CE0AF00DAD792 /* OYPandaLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYPandaLiveListModel.m; sourceTree = "<group>"; };
+		64C458371E374CC700BD02D8 /* OYCategoryPlatformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCategoryPlatformModel.h; sourceTree = "<group>"; };
+		64C458381E374CC700BD02D8 /* OYCategoryPlatformModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCategoryPlatformModel.m; sourceTree = "<group>"; };
+		64C4583A1E374CD900BD02D8 /* OYCategoryGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCategoryGameModel.h; sourceTree = "<group>"; };
+		64C4583B1E374CD900BD02D8 /* OYCategoryGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCategoryGameModel.m; sourceTree = "<group>"; };
+		64C4583D1E3758E800BD02D8 /* OYCategoryGameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCategoryGameCell.h; sourceTree = "<group>"; };
+		64C4583E1E3758E800BD02D8 /* OYCategoryGameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCategoryGameCell.m; sourceTree = "<group>"; };
+		64C9B57A1E45A23000D384CA /* OYHomeRoomListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYHomeRoomListModel.h; sourceTree = "<group>"; };
+		64C9B57B1E45A23000D384CA /* OYHomeRoomListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYHomeRoomListModel.m; sourceTree = "<group>"; };
+		64C9B57D1E45A52E00D384CA /* OYHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYHomeCell.h; sourceTree = "<group>"; };
+		64C9B57E1E45A52E00D384CA /* OYHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYHomeCell.m; sourceTree = "<group>"; };
+		64C9B5831E45F09B00D384CA /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
+		64D052D71E3746C900F3CEBE /* category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = category.plist; sourceTree = "<group>"; };
+		B28A21F281CC51EB18C1557E /* Pods-QuickOrangeLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickOrangeLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickOrangeLive/Pods-QuickOrangeLive.release.xcconfig"; sourceTree = "<group>"; };
+		DD608B2D56D04C47CF8E23DB /* libPods-QuickOrangeLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickOrangeLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		644D35171E35A90E005043CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6400195B1E3C3F980044CF47 /* VideoToolbox.framework in Frameworks */,
+				640019591E3C3F8C0044CF47 /* UIKit.framework in Frameworks */,
+				640019571E3C3F830044CF47 /* QuartzCore.framework in Frameworks */,
+				64115E351E4826C900F2769D /* IJKMediaFramework.framework in Frameworks */,
+				640019551E3C3F740044CF47 /* OpenGLES.framework in Frameworks */,
+				640019531E3C3F6C0044CF47 /* MobileCoreServices.framework in Frameworks */,
+				640019511E3C3F5A0044CF47 /* MediaPlayer.framework in Frameworks */,
+				6400194F1E3C3F530044CF47 /* CoreVideo.framework in Frameworks */,
+				6400194D1E3C3F490044CF47 /* CoreMedia.framework in Frameworks */,
+				6400194B1E3C3F400044CF47 /* CoreGraphics.framework in Frameworks */,
+				640019491E3C3F380044CF47 /* AVFoundation.framework in Frameworks */,
+				640019471E3C3F2D0044CF47 /* AudioToolbox.framework in Frameworks */,
+				640019451E3C3F250044CF47 /* libbz2.tbd in Frameworks */,
+				640019431E3C3F1A0044CF47 /* libz.tbd in Frameworks */,
+				5A6A088B492C4E3153DDFEF4 /* libPods-QuickOrangeLive.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C03AAFE49FFEF542A0B1E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64115E341E4826C900F2769D /* IJKMediaFramework.framework */,
+				6400195A1E3C3F980044CF47 /* VideoToolbox.framework */,
+				640019581E3C3F8C0044CF47 /* UIKit.framework */,
+				640019561E3C3F830044CF47 /* QuartzCore.framework */,
+				640019541E3C3F740044CF47 /* OpenGLES.framework */,
+				640019521E3C3F6C0044CF47 /* MobileCoreServices.framework */,
+				640019501E3C3F5A0044CF47 /* MediaPlayer.framework */,
+				6400194E1E3C3F530044CF47 /* CoreVideo.framework */,
+				6400194C1E3C3F490044CF47 /* CoreMedia.framework */,
+				6400194A1E3C3F400044CF47 /* CoreGraphics.framework */,
+				640019481E3C3F380044CF47 /* AVFoundation.framework */,
+				640019461E3C3F2D0044CF47 /* AudioToolbox.framework */,
+				640019441E3C3F250044CF47 /* libbz2.tbd */,
+				640019421E3C3F1A0044CF47 /* libz.tbd */,
+				DD608B2D56D04C47CF8E23DB /* libPods-QuickOrangeLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49D0EB639B440199AB109390 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37D243BCB51243DF16D7BB26 /* Pods-QuickOrangeLive.debug.xcconfig */,
+				B28A21F281CC51EB18C1557E /* Pods-QuickOrangeLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6414E8111E3B0521002B789C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6414E80E1E3B051D002B789C /* OYLiveListModel.h */,
+				6414E80F1E3B051D002B789C /* OYLiveListModel.m */,
+				649767B01E3CE0AF00DAD792 /* OYPandaLiveListModel.h */,
+				649767B11E3CE0AF00DAD792 /* OYPandaLiveListModel.m */,
+				6412C7DA1E3F81310036CCBE /* OYZhanqiLiveListModel.h */,
+				6412C7DB1E3F81310036CCBE /* OYZhanqiLiveListModel.m */,
+				6412C7DE1E3FA6B30036CCBE /* OYQuanMinLiveListModel.h */,
+				6412C7DF1E3FA6B30036CCBE /* OYQuanMinLiveListModel.m */,
+				640019671E3C4D9B0044CF47 /* OYLiveRoomModel.h */,
+				640019681E3C4D9B0044CF47 /* OYLiveRoomModel.m */,
+				640019641E3C4CC90044CF47 /* OYLiveStreamModel.h */,
+				640019651E3C4CC90044CF47 /* OYLiveStreamModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		641767E21E384608002F7345 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				641767E61E3854EC002F7345 /* Controllers */,
+				641767EA1E3855ED002F7345 /* Views */,
+				6414E8111E3B0521002B789C /* Model */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		641767E61E3854EC002F7345 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				641767E31E384637002F7345 /* OYLiveListController.h */,
+				641767E41E384637002F7345 /* OYLiveListController.m */,
+				6400196A1E3C500A0044CF47 /* OYLiveRoomController.h */,
+				6400196B1E3C500A0044CF47 /* OYLiveRoomController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		641767EA1E3855ED002F7345 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				641767E71E3855EA002F7345 /* OYLiveListCell.h */,
+				641767E81E3855EA002F7345 /* OYLiveListCell.m */,
+				643DC4C41E422E12006818C7 /* OYLivePlayerControl.h */,
+				643DC4C51E422E12006818C7 /* OYLivePlayerControl.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		644D35111E35A90E005043CC = {
+			isa = PBXGroup;
+			children = (
+				644D351C1E35A90E005043CC /* QuickOrangeLive */,
+				644D351B1E35A90E005043CC /* Products */,
+				49D0EB639B440199AB109390 /* Pods */,
+				06C03AAFE49FFEF542A0B1E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		644D351B1E35A90E005043CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				644D351A1E35A90E005043CC /* QuickOrangeLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		644D351C1E35A90E005043CC /* QuickOrangeLive */ = {
+			isa = PBXGroup;
+			children = (
+				644D35201E35A90E005043CC /* AppDelegate.h */,
+				644D35211E35A90E005043CC /* AppDelegate.m */,
+				644D35341E35AAE6005043CC /* Classes */,
+				644D35391E35AB2A005043CC /* Libs */,
+				644D351D1E35A90E005043CC /* Supporting Files */,
+			);
+			path = QuickOrangeLive;
+			sourceTree = "<group>";
+		};
+		644D351D1E35A90E005043CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64C9B5831E45F09B00D384CA /* FZLTZCHJW--GB1-0.TTF */,
+				644D354C1E35E8A9005043CC /* Assets.xcassets */,
+				644D352B1E35A90E005043CC /* LaunchScreen.storyboard */,
+				644D352E1E35A90F005043CC /* Info.plist */,
+				644D351E1E35A90E005043CC /* main.m */,
+				644D353C1E35AE00005043CC /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		644D35341E35AAE6005043CC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				644D35371E35AAE6005043CC /* Main */,
+				644D35361E35AAE6005043CC /* Home */,
+				644D35351E35AAE6005043CC /* Category */,
+				644D35381E35AAE6005043CC /* Subscription */,
+				641767E21E384608002F7345 /* Live */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		644D35351E35AAE6005043CC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				644D35521E36097B005043CC /* Controllers */,
+				644D35561E361537005043CC /* Views */,
+				64D052D91E3746CD00F3CEBE /* Models */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		644D35361E35AAE6005043CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64C9B5811E45A54400D384CA /* Model */,
+				64C9B5801E45A53300D384CA /* View */,
+				64C9B5821E45A55A00D384CA /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		644D35371E35AAE6005043CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				644D353D1E35B35C005043CC /* OYNavigationController.h */,
+				644D353E1E35B35C005043CC /* OYNavigationController.m */,
+				644D35491E35B41F005043CC /* OYTabBarController.h */,
+				644D354A1E35B41F005043CC /* OYTabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		644D35381E35AAE6005043CC /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				644D35461E35B3F1005043CC /* OYSubscriptionController.h */,
+				644D35471E35B3F1005043CC /* OYSubscriptionController.m */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		644D35391E35AB2A005043CC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				644D353B1E35AB59005043CC /* Sigleton */,
+				644D353A1E35AB2A005043CC /* Additions */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		644D353A1E35AB2A005043CC /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				644D35511E35F6CA005043CC /* Additions.h */,
+				644D354E1E35F632005043CC /* UIColor+OYAddition.h */,
+				644D354F1E35F632005043CC /* UIColor+OYAddition.m */,
+				644616061E3A4F70008E8055 /* NSArray+TTLog.h */,
+				644616071E3A4F70008E8055 /* NSArray+TTLog.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		644D353B1E35AB59005043CC /* Sigleton */ = {
+			isa = PBXGroup;
+			children = (
+				641767EB1E38BEEB002F7345 /* OYNetworkManager.h */,
+				641767EC1E38BEEB002F7345 /* OYNetworkManager.m */,
+			);
+			path = Sigleton;
+			sourceTree = "<group>";
+		};
+		644D35521E36097B005043CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				644D35431E35B3CE005043CC /* OYCategoryController.h */,
+				644D35441E35B3CE005043CC /* OYCategoryController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		644D35561E361537005043CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				644D35531E361533005043CC /* OYCategoryLeftCell.h */,
+				644D35541E361533005043CC /* OYCategoryLeftCell.m */,
+				64136AE21E36EAD6004FB4E8 /* OYCategoryRightCell.h */,
+				64136AE31E36EAD6004FB4E8 /* OYCategoryRightCell.m */,
+				64C4583D1E3758E800BD02D8 /* OYCategoryGameCell.h */,
+				64C4583E1E3758E800BD02D8 /* OYCategoryGameCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		64C9B5801E45A53300D384CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64C9B57D1E45A52E00D384CA /* OYHomeCell.h */,
+				64C9B57E1E45A52E00D384CA /* OYHomeCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		64C9B5811E45A54400D384CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64C9B57A1E45A23000D384CA /* OYHomeRoomListModel.h */,
+				64C9B57B1E45A23000D384CA /* OYHomeRoomListModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		64C9B5821E45A55A00D384CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				644D35401E35B3C0005043CC /* OYHomeController.h */,
+				644D35411E35B3C0005043CC /* OYHomeController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		64D052D91E3746CD00F3CEBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64D052D71E3746C900F3CEBE /* category.plist */,
+				64C458371E374CC700BD02D8 /* OYCategoryPlatformModel.h */,
+				64C458381E374CC700BD02D8 /* OYCategoryPlatformModel.m */,
+				64C4583A1E374CD900BD02D8 /* OYCategoryGameModel.h */,
+				64C4583B1E374CD900BD02D8 /* OYCategoryGameModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		644D35191E35A90E005043CC /* QuickOrangeLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 644D35311E35A90F005043CC /* Build configuration list for PBXNativeTarget "QuickOrangeLive" */;
+			buildPhases = (
+				211A154C343C9D643B98F71F /* [CP] Check Pods Manifest.lock */,
+				644D35161E35A90E005043CC /* Sources */,
+				644D35171E35A90E005043CC /* Frameworks */,
+				644D35181E35A90E005043CC /* Resources */,
+				C6E6345AF28E53211FF7696D /* [CP] Embed Pods Frameworks */,
+				C6AEB65E22C3355359924F47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickOrangeLive;
+			productName = QuickOrangeLive;
+			productReference = 644D351A1E35A90E005043CC /* QuickOrangeLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		644D35121E35A90E005043CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OY;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Orange Yu";
+				TargetAttributes = {
+					644D35191E35A90E005043CC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JJ93J6U3PS;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 644D35151E35A90E005043CC /* Build configuration list for PBXProject "QuickOrangeLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 644D35111E35A90E005043CC;
+			productRefGroup = 644D351B1E35A90E005043CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				644D35191E35A90E005043CC /* QuickOrangeLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		644D35181E35A90E005043CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D052D81E3746C900F3CEBE /* category.plist in Resources */,
+				644D354D1E35E8A9005043CC /* Assets.xcassets in Resources */,
+				644D352D1E35A90E005043CC /* LaunchScreen.storyboard in Resources */,
+				64C9B5841E45F09B00D384CA /* FZLTZCHJW--GB1-0.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		211A154C343C9D643B98F71F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6AEB65E22C3355359924F47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickOrangeLive/Pods-QuickOrangeLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E6345AF28E53211FF7696D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickOrangeLive/Pods-QuickOrangeLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		644D35161E35A90E005043CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644D35481E35B3F1005043CC /* OYSubscriptionController.m in Sources */,
+				6412C7E01E3FA6B30036CCBE /* OYQuanMinLiveListModel.m in Sources */,
+				64C9B57F1E45A52E00D384CA /* OYHomeCell.m in Sources */,
+				644D354B1E35B41F005043CC /* OYTabBarController.m in Sources */,
+				644616081E3A4F70008E8055 /* NSArray+TTLog.m in Sources */,
+				64136AE41E36EAD6004FB4E8 /* OYCategoryRightCell.m in Sources */,
+				644D35451E35B3CE005043CC /* OYCategoryController.m in Sources */,
+				644D35501E35F632005043CC /* UIColor+OYAddition.m in Sources */,
+				64C4583F1E3758E800BD02D8 /* OYCategoryGameCell.m in Sources */,
+				644D353F1E35B35C005043CC /* OYNavigationController.m in Sources */,
+				649767B21E3CE0AF00DAD792 /* OYPandaLiveListModel.m in Sources */,
+				6412C7DD1E3F88D60036CCBE /* OYLiveListController.m in Sources */,
+				644D35221E35A90E005043CC /* AppDelegate.m in Sources */,
+				64C458391E374CC700BD02D8 /* OYCategoryPlatformModel.m in Sources */,
+				6400196C1E3C500A0044CF47 /* OYLiveRoomController.m in Sources */,
+				644D35421E35B3C0005043CC /* OYHomeController.m in Sources */,
+				64C9B57C1E45A23000D384CA /* OYHomeRoomListModel.m in Sources */,
+				6412C7DC1E3F81310036CCBE /* OYZhanqiLiveListModel.m in Sources */,
+				6414E8101E3B051D002B789C /* OYLiveListModel.m in Sources */,
+				641767ED1E38BEEB002F7345 /* OYNetworkManager.m in Sources */,
+				641767E91E3855EA002F7345 /* OYLiveListCell.m in Sources */,
+				640019691E3C4D9B0044CF47 /* OYLiveRoomModel.m in Sources */,
+				644D351F1E35A90E005043CC /* main.m in Sources */,
+				644D35551E361533005043CC /* OYCategoryLeftCell.m in Sources */,
+				643DC4C61E422E12006818C7 /* OYLivePlayerControl.m in Sources */,
+				64C4583C1E374CD900BD02D8 /* OYCategoryGameModel.m in Sources */,
+				640019661E3C4CC90044CF47 /* OYLiveStreamModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		644D352B1E35A90E005043CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				644D352C1E35A90E005043CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		644D352F1E35A90F005043CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		644D35301E35A90F005043CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		644D35321E35A90F005043CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D243BCB51243DF16D7BB26 /* Pods-QuickOrangeLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JJ93J6U3PS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QuickOrangeLive",
+				);
+				GCC_PREFIX_HEADER = QuickOrangeLive/PrefixHeader.pch;
+				INFOPLIST_FILE = QuickOrangeLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orangeYu.www.QuickOrangeLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4e0a8213-cf4d-41ba-a940-bfd70798fcde";
+				PROVISIONING_PROFILE_SPECIFIER = Universal;
+			};
+			name = Debug;
+		};
+		644D35331E35A90F005043CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28A21F281CC51EB18C1557E /* Pods-QuickOrangeLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QuickOrangeLive",
+				);
+				GCC_PREFIX_HEADER = QuickOrangeLive/PrefixHeader.pch;
+				INFOPLIST_FILE = QuickOrangeLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orangeYu.www.QuickOrangeLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		644D35151E35A90E005043CC /* Build configuration list for PBXProject "QuickOrangeLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				644D352F1E35A90F005043CC /* Debug */,
+				644D35301E35A90F005043CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		644D35311E35A90F005043CC /* Build configuration list for PBXNativeTarget "QuickOrangeLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				644D35321E35A90F005043CC /* Debug */,
+				644D35331E35A90F005043CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 644D35121E35A90E005043CC /* Project object */;
+}

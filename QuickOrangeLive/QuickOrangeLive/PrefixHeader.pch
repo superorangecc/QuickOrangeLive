@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  QuickOrangeLive
+//
+//  Created by Orange Yu on 2017/1/23.
+//  Copyright © 2017年 Orange Yu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//MARK:- 分类
+#import "Additions.h"
+
+//MARK:- 第三方框架
+#import <Masonry.h>
+#import <YYModel.h>
+#import <AFNetworking.h>
+
+//MARK:- 输出宏
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+
+//MARK:- 常量
+#define NavigationBarHeight 64
+#define TabBarHeight 44
+
+#endif /* PrefixHeader_pch */
