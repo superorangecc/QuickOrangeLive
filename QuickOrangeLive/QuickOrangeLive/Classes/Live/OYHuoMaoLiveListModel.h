@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OYLiveListModel : NSObject
+@interface OYHuoMaoLiveListModel : NSObject
 
 /** 房间名 */
 @property (copy, nonatomic) NSString *roomName;

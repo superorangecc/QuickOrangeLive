@@ -22,7 +22,7 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.rootViewController = [[OYTabBarController alloc]init];
     [_window makeKeyAndVisible];
-    
+        
     return YES;
 }
 

@@ -16,7 +16,7 @@ typedef void(^StreamCallBack)(NSURL* streamUrl);
 + (instancetype)sharedManager;
 
 /** 获取房间列表 */
-- (void)getRoomListWithPlatformId:(int)platformId andGameId:(NSString *)gameName andPageNum:(int)pageNum andCompletionHandler:(SuccessCallBack)callBack;
+- (void)getRoomListWithPlatformId:(int)platformId andGameId:(NSString *)gameName andPageNum:(int)pageNum andOffset:(int)offset andCompletionHandler:(SuccessCallBack)callBack;
 /** 获取直播间 */
 - (void)getRoomWithPlatformId:(int)platformId andRoomId:(int)roomId andVideoId:(NSString *)videoId andStreamUrl:(NSString *)streamUrl andCompletionHandler:(StreamCallBack)callBack;
 

@@ -12,6 +12,8 @@
 #import "OYZhanqiLiveListModel.h"
 #import "OYQuanMinLiveListModel.h"
 #import "OYHomeRoomListModel.h"
+#import "OYHuoMaoLiveListModel.h"
+#import "OYDouyuLiveListModel.h"
 
 static OYNetworkManager *_instance;
 @implementation OYNetworkManager
@@ -26,7 +28,7 @@ static OYNetworkManager *_instance;
 }
 
 /** 获取房间列表 */
-- (void)getRoomListWithPlatformId:(int)platformId andGameId:(NSString *)gameName andPageNum:(int)pageNum andCompletionHandler:(SuccessCallBack)callBack {
+- (void)getRoomListWithPlatformId:(int)platformId andGameId:(NSString *)gameName andPageNum:(int)pageNum andOffset:(int)offset andCompletionHandler:(SuccessCallBack)callBack {
     switch (platformId) {
         case PlatformTypeXiongMao:
             [self getPandaRoomListWithGameName:gameName andPageNum:pageNum  andCompletionHandler:callBack];
@@ -36,6 +38,13 @@ static OYNetworkManager *_instance;
             break;
         case PlatformTypeQuanMin:
             [self getQuanMinRoomWithGameName:gameName andCompletionHandler:callBack];
+            break;
+        case PlatformTypeHuoMao:
+            [self getHuoMaoRoomListWithGameName:gameName andPageNum:pageNum andCompletionHandler:callBack];
+            break;
+        case PlatformTypeDouYu:
+            [self getDouyuRoomListWithGameName:gameName andOffset:offset andCompletionHandler:callBack];
+            break;
         default:
             break;
     }
@@ -87,13 +96,14 @@ static OYNetworkManager *_instance;
 }
 
 /** 获取火猫房间列表 */
-- (void)getHuoMaoRoomListWithGameId:(int)gameId andCompletionHandler:(RequestCallBack)callBack{
-    
-    NSString *requestUrl = [NSString stringWithFormat:@"https://api.huomao.com/channels/channelpage.json?time=%zd&refer=ios&page=1&gid=%d&token=236b5f646c5fe88c726ac89e2e4d19b8",[self getCurrentTime],gameId];
+- (void)getHuoMaoRoomListWithGameName:(NSString *)gameName andPageNum:(int)pageNum andCompletionHandler:(SuccessCallBack)callBack{
+    NSString *requestUrl = [NSString stringWithFormat:@"https://api.huomao.com/channels/channelpage.json?time=%zd&refer=ios&page=%d&gid=%@&token=236b5f646c5fe88c726ac89e2e4d19b8",[self getCurrentTime],pageNum,gameName];
     [self GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        callBack(responseObject,nil);
+        NSArray *roomListArr = responseObject[@"data"][@"list"];
+        NSArray *roomList = [NSArray yy_modelArrayWithClass:[OYHuoMaoLiveListModel class] json:roomListArr];
+        callBack(roomList);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        callBack(nil,error);
+        NSLog(@"请求火猫房间列表数据错误%@",error)
     }];
 }
 
@@ -193,5 +203,22 @@ static OYNetworkManager *_instance;
 - (void)getZhanQiRoomWithStreamUrl:(NSString *)url andCompletionHandler:(StreamCallBack)callBack {
     NSURL *streamUrl = [NSURL URLWithString:url];
     callBack(streamUrl);
+}
+
+/** 获取斗鱼房间列表 */
+- (void)getDouyuRoomListWithGameName:(NSString *)gameName andOffset:(int)offset andCompletionHandler:(SuccessCallBack)callBack {
+    NSString *requestUrl = [[NSString alloc]init];
+    if ([gameName  isEqual: @""]) {
+        requestUrl = [NSString stringWithFormat:@"https://capi.douyucdn.cn/api/v1/getColumnRoom/1?limit=20&client_sys=ios&offset=%d",offset];
+    }else {
+        requestUrl = [NSString stringWithFormat:@"https://capi.douyucdn.cn/api/v1/live/%@?limit=20&client_sys=ios&offset=%d",gameName,offset];
+    }
+    [self GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray *roomListArr = responseObject[@"data"];
+        NSArray *roomList = [NSArray yy_modelArrayWithClass:[OYDouyuLiveListModel class] json:roomListArr];
+        callBack(roomList);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求斗鱼房间列表数据错误%@",error)
+    }];
 }
 @end

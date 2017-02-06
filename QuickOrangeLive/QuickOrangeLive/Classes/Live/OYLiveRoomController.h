@@ -19,10 +19,12 @@
 @property(atomic, retain) id<IJKMediaPlayback> player;
 @property (strong, nonatomic) OYLivePlayerControl *playerControl;
 @property (copy, nonatomic) NSString *liveName;
+@property (strong, nonatomic) NSArray *roomList;
+@property (strong, nonatomic) NSIndexPath *indexPath;
 
 //- (id)initWithURL:(NSURL *)url;
 
-+ (void)presentFromViewController:(UIViewController *)viewController withTitle:(NSString *)title URL:(NSURL *)url completion:(void(^)())completion;
++ (void)presentFromViewController:(UIViewController *)viewController withTitle:(NSString *)title URL:(NSURL *)url andRoomList:(NSArray *)roomList andIndexPath:(NSIndexPath *)indexPath completion:(void(^)())completion;
 
 @property (strong, nonatomic) OYPandaLiveListModel *pandaLiveListModel;
 @property (strong, nonatomic) OYZhanqiLiveListModel *zhanQiLiveListModel;

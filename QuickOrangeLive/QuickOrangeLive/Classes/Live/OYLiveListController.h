@@ -36,5 +36,6 @@ typedef enum : NSUInteger {
 @property (strong, nonatomic) OYCategoryPlatformModel *platFormModel;
 @property (strong, nonatomic) OYCategoryGameModel *gameModel;
 @property (nonatomic) int currentPage;
+@property (nonatomic) int currentOffset;
 
 @end

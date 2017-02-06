@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Orange Yu. All rights reserved.
 //
 
-#import "OYLiveListModel.h"
+#import "OYHuoMaoLiveListModel.h"
 
-@implementation OYLiveListModel
+@implementation OYHuoMaoLiveListModel
 
 // 返回一个 Dict，将 Model 属性名对映射到 JSON 的 Key。
 // key:propertyName value:JsonKey

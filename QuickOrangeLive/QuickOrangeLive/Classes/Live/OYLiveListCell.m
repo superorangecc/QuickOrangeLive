@@ -33,12 +33,20 @@
     return self;
 }
 
-- (void)setLiveListModel:(OYLiveListModel *)liveListModel {
-    _liveListModel = liveListModel;
-    [self.screenshotImageView sd_setImageWithURL:[NSURL URLWithString:liveListModel.imgName]];
-    self.audienceCountLabel.text = liveListModel.audienceCount;
-    self.liveNameLabel.text = liveListModel.roomName;
-    self.anchorNameLabel.text = liveListModel.userName;
+- (void)setDouyuLiveListModel:(OYDouyuLiveListModel *)douyuLiveListModel {
+    _douyuLiveListModel = douyuLiveListModel;
+    [self.screenshotImageView sd_setImageWithURL:[NSURL URLWithString:douyuLiveListModel.room_src]];
+    self.audienceCountLabel.text = douyuLiveListModel.online;
+    self.liveNameLabel.text = douyuLiveListModel.room_name;
+    self.anchorNameLabel.text = douyuLiveListModel.nickname;
+}
+
+- (void)setHuoMaoLiveListModel:(OYHuoMaoLiveListModel *)huoMaoliveListModel {
+    _huoMaoLiveListModel = huoMaoliveListModel;
+    [self.screenshotImageView sd_setImageWithURL:[NSURL URLWithString:huoMaoliveListModel.imgName]];
+    self.audienceCountLabel.text = huoMaoliveListModel.audienceCount;
+    self.liveNameLabel.text = huoMaoliveListModel.roomName;
+    self.anchorNameLabel.text = huoMaoliveListModel.userName;
 }
 
 - (void)setPandaLiveListModel:(OYPandaLiveListModel *)pandaLiveListModel {

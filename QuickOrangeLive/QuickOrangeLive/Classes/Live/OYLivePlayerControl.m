@@ -102,6 +102,8 @@
     [overlayPanel addSubview:liveNameLabel];
     
     UIButton *likeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.likeButton = likeButton;
+    [likeButton addTarget:self.liveRoomController action:@selector(onClickLike) forControlEvents:UIControlEventTouchUpInside];
     [likeButton setImage:[UIImage imageNamed:@"action_ic_like_27x24_"] forState:UIControlStateNormal];
     [likeButton setImage:[UIImage imageNamed:@"action_ic_liked_27x24_"] forState:UIControlStateSelected];
     [overlayPanel addSubview:likeButton];
@@ -298,5 +300,6 @@
 - (void)onClickOverlayPanel{}
 - (void)onClickVolumnUp{}
 - (void)onClickVolumnDown{}
+- (void)onClickLike{}
 
 @end

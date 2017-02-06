@@ -21,6 +21,8 @@
 @property (weak, nonatomic) UIButton *playButton;
 @property (weak, nonatomic) UIButton *pauseButton;
 @property (weak, nonatomic) UILabel *liveNameLabel;
+@property (weak, nonatomic) UIButton *likeButton;
+
 
 
 @property (copy, nonatomic) NSString *liveName;

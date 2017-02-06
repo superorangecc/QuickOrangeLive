@@ -13,6 +13,6 @@ target 'QuickOrangeLive' do
   pod 'AFNetworking'
   pod 'FMDB'
   pod 'MJRefresh'
-  
+  pod 'SVProgressHUD'
 
 end

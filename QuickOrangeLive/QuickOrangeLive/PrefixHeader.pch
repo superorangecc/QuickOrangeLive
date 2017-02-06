@@ -16,6 +16,7 @@
 #import <Masonry.h>
 #import <YYModel.h>
 #import <AFNetworking.h>
+#import <SVProgressHUD.h>
 
 //MARK:- 输出宏
 #ifdef DEBUG

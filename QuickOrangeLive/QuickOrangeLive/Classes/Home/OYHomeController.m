@@ -68,12 +68,14 @@ static NSString *homeTableViewCellIdentifier = @"homeTableViewCellIdentifier";
     NSString *liveId = selectRoomModel.live_id;
     NSString *liveName = selectRoomModel.live_title;
     [[OYNetworkManager sharedManager]getHomeRoomWithLiveType:liveType andLiveId:liveId andCompletionHandler:^(NSURL *streamUrl) {
+        [SVProgressHUD show];
         NSString *scheme = [[streamUrl scheme] lowercaseString];
         if ([scheme isEqualToString:@"http"]
             || [scheme isEqualToString:@"https"]
             || [scheme isEqualToString:@"rtmp"]) {
-            [OYLiveRoomController presentFromViewController:self withTitle:liveName URL:streamUrl completion:^{
+            [OYLiveRoomController presentFromViewController:self withTitle:liveName URL:streamUrl andRoomList:self.roomList andIndexPath:indexPath completion:^{
                 //            [self.navigationController popViewControllerAnimated:NO];
+                [SVProgressHUD dismiss];
             }];
         }
     }];

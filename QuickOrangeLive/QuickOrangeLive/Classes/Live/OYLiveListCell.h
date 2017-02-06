@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OYLiveListModel.h"
+#import "OYHuoMaoLiveListModel.h"
 #import "OYPandaLiveListModel.h"
 #import "OYZhanqiLiveListModel.h"
 #import "OYQuanMinLiveListModel.h"
+#import "OYDouyuLiveListModel.h"
 
 @interface OYLiveListCell : UICollectionViewCell
 
-@property (strong, nonatomic) OYLiveListModel *liveListModel;
+@property (strong, nonatomic) OYHuoMaoLiveListModel *huoMaoLiveListModel;
 @property (strong, nonatomic) OYPandaLiveListModel *pandaLiveListModel;
 @property (strong, nonatomic) OYZhanqiLiveListModel *zhanqiLiveListModel;
 @property (strong, nonatomic) OYQuanMinLiveListModel *quanminLiveListModel;
+@property (strong, nonatomic) OYDouyuLiveListModel *douyuLiveListModel;
+
 
 @end

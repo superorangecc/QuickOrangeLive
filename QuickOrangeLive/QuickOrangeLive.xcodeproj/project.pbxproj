@@ -25,11 +25,14 @@
 		640019691E3C4D9B0044CF47 /* OYLiveRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 640019681E3C4D9B0044CF47 /* OYLiveRoomModel.m */; };
 		6400196C1E3C500A0044CF47 /* OYLiveRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6400196B1E3C500A0044CF47 /* OYLiveRoomController.m */; };
 		64115E351E4826C900F2769D /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64115E341E4826C900F2769D /* IJKMediaFramework.framework */; };
+		64115E391E48649400F2769D /* OYCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64115E381E48649400F2769D /* OYCollectionManager.m */; };
+		64115E3B1E48668B00F2769D /* db.sql in Resources */ = {isa = PBXBuildFile; fileRef = 64115E3A1E48668B00F2769D /* db.sql */; };
+		64115E3E1E48A25300F2769D /* OYDouyuLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64115E3D1E48A25300F2769D /* OYDouyuLiveListModel.m */; };
 		6412C7DC1E3F81310036CCBE /* OYZhanqiLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412C7DB1E3F81310036CCBE /* OYZhanqiLiveListModel.m */; };
 		6412C7DD1E3F88D60036CCBE /* OYLiveListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641767E41E384637002F7345 /* OYLiveListController.m */; };
 		6412C7E01E3FA6B30036CCBE /* OYQuanMinLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412C7DF1E3FA6B30036CCBE /* OYQuanMinLiveListModel.m */; };
 		64136AE41E36EAD6004FB4E8 /* OYCategoryRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64136AE31E36EAD6004FB4E8 /* OYCategoryRightCell.m */; };
-		6414E8101E3B051D002B789C /* OYLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6414E80F1E3B051D002B789C /* OYLiveListModel.m */; };
+		6414E8101E3B051D002B789C /* OYHuoMaoLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6414E80F1E3B051D002B789C /* OYHuoMaoLiveListModel.m */; };
 		641767E91E3855EA002F7345 /* OYLiveListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 641767E81E3855EA002F7345 /* OYLiveListCell.m */; };
 		641767ED1E38BEEB002F7345 /* OYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 641767EC1E38BEEB002F7345 /* OYNetworkManager.m */; };
 		643DC4C61E422E12006818C7 /* OYLivePlayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 643DC4C51E422E12006818C7 /* OYLivePlayerControl.m */; };
@@ -77,14 +80,19 @@
 		6400196A1E3C500A0044CF47 /* OYLiveRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveRoomController.h; sourceTree = "<group>"; };
 		6400196B1E3C500A0044CF47 /* OYLiveRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveRoomController.m; sourceTree = "<group>"; };
 		64115E341E4826C900F2769D /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = QuickOrangeLive/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		64115E371E48649400F2769D /* OYCollectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCollectionManager.h; sourceTree = "<group>"; };
+		64115E381E48649400F2769D /* OYCollectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCollectionManager.m; sourceTree = "<group>"; };
+		64115E3A1E48668B00F2769D /* db.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = db.sql; sourceTree = "<group>"; };
+		64115E3C1E48A25300F2769D /* OYDouyuLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYDouyuLiveListModel.h; sourceTree = "<group>"; };
+		64115E3D1E48A25300F2769D /* OYDouyuLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYDouyuLiveListModel.m; sourceTree = "<group>"; };
 		6412C7DA1E3F81310036CCBE /* OYZhanqiLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYZhanqiLiveListModel.h; sourceTree = "<group>"; };
 		6412C7DB1E3F81310036CCBE /* OYZhanqiLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYZhanqiLiveListModel.m; sourceTree = "<group>"; };
 		6412C7DE1E3FA6B30036CCBE /* OYQuanMinLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYQuanMinLiveListModel.h; sourceTree = "<group>"; };
 		6412C7DF1E3FA6B30036CCBE /* OYQuanMinLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYQuanMinLiveListModel.m; sourceTree = "<group>"; };
 		64136AE21E36EAD6004FB4E8 /* OYCategoryRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCategoryRightCell.h; sourceTree = "<group>"; };
 		64136AE31E36EAD6004FB4E8 /* OYCategoryRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYCategoryRightCell.m; sourceTree = "<group>"; };
-		6414E80E1E3B051D002B789C /* OYLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveListModel.h; sourceTree = "<group>"; };
-		6414E80F1E3B051D002B789C /* OYLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveListModel.m; sourceTree = "<group>"; };
+		6414E80E1E3B051D002B789C /* OYHuoMaoLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYHuoMaoLiveListModel.h; sourceTree = "<group>"; };
+		6414E80F1E3B051D002B789C /* OYHuoMaoLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYHuoMaoLiveListModel.m; sourceTree = "<group>"; };
 		641767E31E384637002F7345 /* OYLiveListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveListController.h; sourceTree = "<group>"; };
 		641767E41E384637002F7345 /* OYLiveListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYLiveListController.m; sourceTree = "<group>"; };
 		641767E71E3855EA002F7345 /* OYLiveListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYLiveListCell.h; sourceTree = "<group>"; };
@@ -196,8 +204,10 @@
 		6414E8111E3B0521002B789C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6414E80E1E3B051D002B789C /* OYLiveListModel.h */,
-				6414E80F1E3B051D002B789C /* OYLiveListModel.m */,
+				6414E80E1E3B051D002B789C /* OYHuoMaoLiveListModel.h */,
+				6414E80F1E3B051D002B789C /* OYHuoMaoLiveListModel.m */,
+				64115E3C1E48A25300F2769D /* OYDouyuLiveListModel.h */,
+				64115E3D1E48A25300F2769D /* OYDouyuLiveListModel.m */,
 				649767B01E3CE0AF00DAD792 /* OYPandaLiveListModel.h */,
 				649767B11E3CE0AF00DAD792 /* OYPandaLiveListModel.m */,
 				6412C7DA1E3F81310036CCBE /* OYZhanqiLiveListModel.h */,
@@ -277,6 +287,7 @@
 		644D351D1E35A90E005043CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				64115E3A1E48668B00F2769D /* db.sql */,
 				64C9B5831E45F09B00D384CA /* FZLTZCHJW--GB1-0.TTF */,
 				644D354C1E35E8A9005043CC /* Assets.xcassets */,
 				644D352B1E35A90E005043CC /* LaunchScreen.storyboard */,
@@ -365,6 +376,8 @@
 			children = (
 				641767EB1E38BEEB002F7345 /* OYNetworkManager.h */,
 				641767EC1E38BEEB002F7345 /* OYNetworkManager.m */,
+				64115E371E48649400F2769D /* OYCollectionManager.h */,
+				64115E381E48649400F2769D /* OYCollectionManager.m */,
 			);
 			path = Sigleton;
 			sourceTree = "<group>";
@@ -493,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64115E3B1E48668B00F2769D /* db.sql in Resources */,
 				64D052D81E3746C900F3CEBE /* category.plist in Resources */,
 				644D354D1E35E8A9005043CC /* Assets.xcassets in Resources */,
 				644D352D1E35A90E005043CC /* LaunchScreen.storyboard in Resources */,
@@ -573,14 +587,16 @@
 				644D35421E35B3C0005043CC /* OYHomeController.m in Sources */,
 				64C9B57C1E45A23000D384CA /* OYHomeRoomListModel.m in Sources */,
 				6412C7DC1E3F81310036CCBE /* OYZhanqiLiveListModel.m in Sources */,
-				6414E8101E3B051D002B789C /* OYLiveListModel.m in Sources */,
+				6414E8101E3B051D002B789C /* OYHuoMaoLiveListModel.m in Sources */,
 				641767ED1E38BEEB002F7345 /* OYNetworkManager.m in Sources */,
 				641767E91E3855EA002F7345 /* OYLiveListCell.m in Sources */,
 				640019691E3C4D9B0044CF47 /* OYLiveRoomModel.m in Sources */,
 				644D351F1E35A90E005043CC /* main.m in Sources */,
+				64115E391E48649400F2769D /* OYCollectionManager.m in Sources */,
 				644D35551E361533005043CC /* OYCategoryLeftCell.m in Sources */,
 				643DC4C61E422E12006818C7 /* OYLivePlayerControl.m in Sources */,
 				64C4583C1E374CD900BD02D8 /* OYCategoryGameModel.m in Sources */,
+				64115E3E1E48A25300F2769D /* OYDouyuLiveListModel.m in Sources */,
 				640019661E3C4CC90044CF47 /* OYLiveStreamModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
