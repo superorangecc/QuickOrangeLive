@@ -20,5 +20,7 @@
 @property (copy, nonatomic) NSString *title;
 /** 拉流地址 */
 @property (copy, nonatomic) NSString *stream;
+/** 头像 */
+@property (copy, nonatomic) NSString *avatar;
 
 @end

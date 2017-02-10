@@ -74,6 +74,7 @@ static float widthMagnificationOfLeftTableView = 0.2;
     
     UICollectionViewFlowLayout *collectionViewFlowLayout = [[UICollectionViewFlowLayout alloc]init];
     collectionViewFlowLayout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width * 0.8 - marginBetweenLeftAndRight, [UIScreen mainScreen].bounds.size.height - NavigationBarHeight);
+//        collectionViewFlowLayout.itemSize = CGSizeMake(375 * 0.8 - marginBetweenLeftAndRight, [UIScreen mainScreen].bounds.size.height - NavigationBarHeight);
     collectionViewFlowLayout.minimumLineSpacing = 0;
     
     UICollectionView *rightCollectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:collectionViewFlowLayout];
@@ -81,6 +82,7 @@ static float widthMagnificationOfLeftTableView = 0.2;
     [rightCollectionView registerClass:[OYCategoryRightCell class] forCellWithReuseIdentifier:rightCollectionViewCellIdentifier];
     rightCollectionView.pagingEnabled = YES;
     rightCollectionView.bounces = NO;
+    rightCollectionView.backgroundColor = [UIColor whiteColor];
     rightCollectionView.showsVerticalScrollIndicator = NO;
     
     [self.view addSubview:leftTableView];

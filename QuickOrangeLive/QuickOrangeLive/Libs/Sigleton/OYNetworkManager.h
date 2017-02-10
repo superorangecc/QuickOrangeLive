@@ -25,4 +25,7 @@ typedef void(^StreamCallBack)(NSURL* streamUrl);
 /** 获取首页直播间 */
 - (void)getHomeRoomWithLiveType:(NSString *)liveType andLiveId:(NSString *)liveId andCompletionHandler:(StreamCallBack)callBack;
 
+- (void)getQuanMinRoomWithGameName:(NSString *)gameName andCompletionHandler:(SuccessCallBack)callBack;
+- (void)getQuanMinRoomWithStreamUrl:(NSString *)url andCompletionHandler:(StreamCallBack)callBack;
+
 @end

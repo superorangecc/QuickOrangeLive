@@ -28,6 +28,7 @@
 		64115E391E48649400F2769D /* OYCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64115E381E48649400F2769D /* OYCollectionManager.m */; };
 		64115E3B1E48668B00F2769D /* db.sql in Resources */ = {isa = PBXBuildFile; fileRef = 64115E3A1E48668B00F2769D /* db.sql */; };
 		64115E3E1E48A25300F2769D /* OYDouyuLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64115E3D1E48A25300F2769D /* OYDouyuLiveListModel.m */; };
+		64115E411E48B2AD00F2769D /* UIImage+OYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 64115E401E48B2AD00F2769D /* UIImage+OYImage.m */; };
 		6412C7DC1E3F81310036CCBE /* OYZhanqiLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412C7DB1E3F81310036CCBE /* OYZhanqiLiveListModel.m */; };
 		6412C7DD1E3F88D60036CCBE /* OYLiveListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641767E41E384637002F7345 /* OYLiveListController.m */; };
 		6412C7E01E3FA6B30036CCBE /* OYQuanMinLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412C7DF1E3FA6B30036CCBE /* OYQuanMinLiveListModel.m */; };
@@ -85,6 +86,8 @@
 		64115E3A1E48668B00F2769D /* db.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = db.sql; sourceTree = "<group>"; };
 		64115E3C1E48A25300F2769D /* OYDouyuLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYDouyuLiveListModel.h; sourceTree = "<group>"; };
 		64115E3D1E48A25300F2769D /* OYDouyuLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYDouyuLiveListModel.m; sourceTree = "<group>"; };
+		64115E3F1E48B2AD00F2769D /* UIImage+OYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OYImage.h"; sourceTree = "<group>"; };
+		64115E401E48B2AD00F2769D /* UIImage+OYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OYImage.m"; sourceTree = "<group>"; };
 		6412C7DA1E3F81310036CCBE /* OYZhanqiLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYZhanqiLiveListModel.h; sourceTree = "<group>"; };
 		6412C7DB1E3F81310036CCBE /* OYZhanqiLiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OYZhanqiLiveListModel.m; sourceTree = "<group>"; };
 		6412C7DE1E3FA6B30036CCBE /* OYQuanMinLiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYQuanMinLiveListModel.h; sourceTree = "<group>"; };
@@ -367,6 +370,8 @@
 				644D354F1E35F632005043CC /* UIColor+OYAddition.m */,
 				644616061E3A4F70008E8055 /* NSArray+TTLog.h */,
 				644616071E3A4F70008E8055 /* NSArray+TTLog.m */,
+				64115E3F1E48B2AD00F2769D /* UIImage+OYImage.h */,
+				64115E401E48B2AD00F2769D /* UIImage+OYImage.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -596,6 +601,7 @@
 				644D35551E361533005043CC /* OYCategoryLeftCell.m in Sources */,
 				643DC4C61E422E12006818C7 /* OYLivePlayerControl.m in Sources */,
 				64C4583C1E374CD900BD02D8 /* OYCategoryGameModel.m in Sources */,
+				64115E411E48B2AD00F2769D /* UIImage+OYImage.m in Sources */,
 				64115E3E1E48A25300F2769D /* OYDouyuLiveListModel.m in Sources */,
 				640019661E3C4CC90044CF47 /* OYLiveStreamModel.m in Sources */,
 			);
@@ -709,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JJ93J6U3PS;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -716,12 +723,63 @@
 				);
 				GCC_PREFIX_HEADER = QuickOrangeLive/PrefixHeader.pch;
 				INFOPLIST_FILE = QuickOrangeLive/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"YYModel\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orangeYu.www.QuickOrangeLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4e0a8213-cf4d-41ba-a940-bfd70798fcde";
-				PROVISIONING_PROFILE_SPECIFIER = Universal;
+				PROVISIONING_PROFILE = "e2653396-f2f4-40a2-a671-8926bbf56cd6";
+				PROVISIONING_PROFILE_SPECIFIER = OrangeLiveDevelopmentPP;
 			};
 			name = Debug;
 		};
@@ -730,7 +788,9 @@
 			baseConfigurationReference = B28A21F281CC51EB18C1557E /* Pods-QuickOrangeLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = JJ93J6U3PS;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -738,10 +798,63 @@
 				);
 				GCC_PREFIX_HEADER = QuickOrangeLive/PrefixHeader.pch;
 				INFOPLIST_FILE = QuickOrangeLive/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"YYModel\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orangeYu.www.QuickOrangeLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6ac4b1af-4757-4cb8-b7ba-1c4fee64fb7f";
+				PROVISIONING_PROFILE_SPECIFIER = OrangeLiveDistributionPP;
 			};
 			name = Release;
 		};

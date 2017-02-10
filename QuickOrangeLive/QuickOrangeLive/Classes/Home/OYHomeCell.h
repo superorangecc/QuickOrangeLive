@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "OYHomeRoomListModel.h"
+#import "OYQuanMinLiveListModel.h"
 
 @interface OYHomeCell : UITableViewCell
 
-@property (strong, nonatomic) OYHomeRoomListModel *roomListModel;
+@property (strong, nonatomic) OYQuanMinLiveListModel *roomListModel;
 
 @end

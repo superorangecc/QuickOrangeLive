@@ -11,6 +11,7 @@
 #import "OYLiveListCell.h"
 #import "OYNetworkManager.h"
 #import "OYLiveRoomController.h"
+#import <MJRefresh.h>
 
 static NSString *liveListCollectionViewCellIdentifer = @"liveListCollectionViewCellIdentifer";
 static CGFloat verticalMargin = 5;
@@ -18,10 +19,11 @@ static CGFloat horizontalMargin = 5;
 @interface OYSubscriptionController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (copy, nonatomic) NSArray *collectionModelArr;
-
-@property (strong, nonatomic) NSMutableArray *liveRoomList;
+@property (strong, nonatomic) NSArray *liveRoomList;
 @property (weak, nonatomic) UICollectionView *liveListCollectionView;
 @property (nonatomic) NSInteger platformId;
+@property (weak, nonatomic) UILabel *indicateLabel;
+
 
 @end
 
@@ -29,13 +31,20 @@ static CGFloat horizontalMargin = 5;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadData];
+//    [self loadData];
     [self setUI];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self loadData];
+    self.indicateLabel.hidden = !(self.liveRoomList.count == 0);
 }
 
 - (void)loadData {
     [[OYCollectionManager sharedManager]getAllCollectionsWithPage:1 allCollectionsBlock:^(NSArray *collectionModelArr) {
-        self.liveRoomList = collectionModelArr.mutableCopy;
+        self.liveRoomList = collectionModelArr;
+        [self.liveListCollectionView reloadData];
     }];
 }
 
@@ -54,10 +63,21 @@ static CGFloat horizontalMargin = 5;
     liveListCollectionView.backgroundColor = [UIColor whiteColor];
     [liveListCollectionView registerClass:[OYLiveListCell class] forCellWithReuseIdentifier:liveListCollectionViewCellIdentifer];
     
-    [self.view addSubview:liveListCollectionView];
+    UILabel *indicateLabel = [[UILabel alloc]init];
+    indicateLabel.text = @"你订阅的直播可以在这里找到";
+    indicateLabel.textColor = [UIColor darkGrayColor];
+    indicateLabel.font = [UIFont systemFontOfSize:12];
+    self.indicateLabel = indicateLabel;
+    [self.view addSubview:indicateLabel];
+    
+    [self.view insertSubview:liveListCollectionView atIndex:0];
     
     [liveListCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
+    [indicateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.view).offset(100);
+        make.centerX.equalTo(self.view);
     }];
 }
 

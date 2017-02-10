@@ -65,6 +65,8 @@ static id _instance;
             OYQuanMinLiveListModel *quanMinLiveModel = liveModel;
             live_id = quanMinLiveModel.title;
             dealsModelData = [NSKeyedArchiver archivedDataWithRootObject:quanMinLiveModel];
+        }else {
+            return ;
         }
         if ([db executeUpdate:addSql withArgumentsInArray:@[dealsModelData,live_id]]) {
             NSLog(@"收藏成功");

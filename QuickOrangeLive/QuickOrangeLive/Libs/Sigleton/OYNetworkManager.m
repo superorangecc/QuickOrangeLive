@@ -59,7 +59,7 @@ static OYNetworkManager *_instance;
         case PlatformTypeZhanQi:
             [self getZhanQiRoomWithVideoId:videoId andCompletionHandler:callBack];
         case PlatformTypeQuanMin:
-            [self getZhanQiRoomWithStreamUrl:streamUrl andCompletionHandler:callBack];
+            [self getQuanMinRoomWithStreamUrl:streamUrl andCompletionHandler:callBack];
         default:
             break;
     }
@@ -68,7 +68,7 @@ static OYNetworkManager *_instance;
 /** 获取首页房间列表 */
 - (void)getHomeRoomListWithCompletionHandler:(SuccessCallBack)callBack {
     NSInteger currentTime = [self getCurrentTime];
-    NSString *requestUrl = [NSString stringWithFormat:@"http://api.maxjia.com/api/live/list/?lang=zh-cn&os_type=iOS&os_version=10.2&_time=%zd&limit=30&offset=0",currentTime];
+    NSString *requestUrl = [NSString stringWithFormat:@"http://api.maxjia.com:80/api/live/list/?lang=zh-cn&os_type=iOS&os_version=10.2&_time=%zd&version=3.7.8&device_id=3949CAF7-D188-4F15-AD7E-6505C0725078&game_type=lol&limit=30&offset=0",currentTime];
     [self GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray *roomListArr = responseObject[@"result"];
         NSArray *roomList = [NSArray yy_modelArrayWithClass:[OYHomeRoomListModel class] json:roomListArr];
@@ -81,7 +81,7 @@ static OYNetworkManager *_instance;
 /** 获取首页直播间 */
 - (void)getHomeRoomWithLiveType:(NSString *)liveType andLiveId:(NSString *)liveId andCompletionHandler:(StreamCallBack)callBack {
     NSInteger currentTime = [self getCurrentTime];
-    NSString *requestUrl = [NSString stringWithFormat:@"http://api.maxjia.com:80/api/live/detail/?live_type=%@&live_id=%@&lang=zh-cn&os_type=iOS&os_version=10.2&_time=%zd",liveType,liveId,currentTime];
+    NSString *requestUrl = [NSString stringWithFormat:@"http://api.maxjia.com:80/api/live/detail/?live_type=%@&live_id=%@&game_type=lol&lang=zh-cn&os_type=iOS&os_version=10.2&_time=%zd&version=3.7.8&game_type=lol",liveType,liveId,currentTime];
     [self GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray *streamArr = responseObject[@"result"][@"stream_list"];
         NSDictionary *streamDic = streamArr.firstObject;
@@ -200,7 +200,7 @@ static OYNetworkManager *_instance;
 }
 
 /** 获取全民直播间 */
-- (void)getZhanQiRoomWithStreamUrl:(NSString *)url andCompletionHandler:(StreamCallBack)callBack {
+- (void)getQuanMinRoomWithStreamUrl:(NSString *)url andCompletionHandler:(StreamCallBack)callBack {
     NSURL *streamUrl = [NSURL URLWithString:url];
     callBack(streamUrl);
 }

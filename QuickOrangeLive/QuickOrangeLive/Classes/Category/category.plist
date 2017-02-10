@@ -4,6 +4,89 @@
 <array>
 	<dict>
 		<key>platformid</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>全民</string>
+		<key>bannerpic</key>
+		<string>quanmin</string>
+		<key>categories</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>DOTA2</string>
+				<key>icon</key>
+				<string>dota2</string>
+				<key>gameId</key>
+				<string>dota2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>英雄联盟</string>
+				<key>icon</key>
+				<string>leaguelegends</string>
+				<key>gameId</key>
+				<string>lol</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>炉石传说</string>
+				<key>icon</key>
+				<string>stone</string>
+				<key>gameId</key>
+				<string>heartstone</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>守望先锋</string>
+				<key>icon</key>
+				<string>SWXF</string>
+				<key>gameId</key>
+				<string>overwatch</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSGO</string>
+				<key>icon</key>
+				<string>csgo</string>
+				<key>gameId</key>
+				<string>nizhan</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>王者荣耀</string>
+				<key>icon</key>
+				<string>WARY</string>
+				<key>gameId</key>
+				<string>wangzhe</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>穿越火线</string>
+				<key>icon</key>
+				<string>crossfire</string>
+				<key>gameId</key>
+				<string>cfpc</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>魔兽世界</string>
+				<key>icon</key>
+				<string>WW</string>
+				<key>gameId</key>
+				<string>blizzard</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>其它</string>
+				<key>icon</key>
+				<string>others</string>
+				<key>gameId</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>platformid</key>
 		<integer>3</integer>
 		<key>name</key>
 		<string>熊猫</string>
@@ -23,7 +106,7 @@
 				<key>name</key>
 				<string>英雄联盟</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>leaguelegends</string>
 				<key>gameId</key>
 				<string>lol</string>
 			</dict>
@@ -31,7 +114,7 @@
 				<key>name</key>
 				<string>炉石传说</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>stone</string>
 				<key>gameId</key>
 				<string>hearthstone</string>
 			</dict>
@@ -39,7 +122,7 @@
 				<key>name</key>
 				<string>守望先锋</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>SWXF</string>
 				<key>gameId</key>
 				<string>overwatch</string>
 			</dict>
@@ -47,7 +130,7 @@
 				<key>name</key>
 				<string>CSGO</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>csgo</string>
 				<key>gameId</key>
 				<string>csgo</string>
 			</dict>
@@ -55,7 +138,7 @@
 				<key>name</key>
 				<string>王者荣耀</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>WARY</string>
 				<key>gameId</key>
 				<string>kingglory</string>
 			</dict>
@@ -63,7 +146,7 @@
 				<key>name</key>
 				<string>穿越火线</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>crossfire</string>
 				<key>gameId</key>
 				<string>cf</string>
 			</dict>
@@ -71,7 +154,7 @@
 				<key>name</key>
 				<string>魔兽世界</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>WW</string>
 				<key>gameId</key>
 				<string>wow</string>
 			</dict>
@@ -79,7 +162,7 @@
 				<key>name</key>
 				<string>其它</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>others</string>
 				<key>gameId</key>
 				<string></string>
 			</dict>
@@ -106,7 +189,7 @@
 				<key>name</key>
 				<string>英雄联盟</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>leaguelegends</string>
 				<key>gameId</key>
 				<string>6</string>
 			</dict>
@@ -114,7 +197,7 @@
 				<key>name</key>
 				<string>炉石传说</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>stone</string>
 				<key>gameId</key>
 				<string>9</string>
 			</dict>
@@ -122,7 +205,7 @@
 				<key>name</key>
 				<string>守望先锋</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>SWXF</string>
 				<key>gameId</key>
 				<string>82</string>
 			</dict>
@@ -130,7 +213,7 @@
 				<key>name</key>
 				<string>CSGO</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>csgo</string>
 				<key>gameId</key>
 				<string>119</string>
 			</dict>
@@ -138,7 +221,7 @@
 				<key>name</key>
 				<string>王者荣耀</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>WARY</string>
 				<key>gameId</key>
 				<string>115</string>
 			</dict>
@@ -146,7 +229,7 @@
 				<key>name</key>
 				<string>穿越火线</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>crossfire</string>
 				<key>gameId</key>
 				<string>120</string>
 			</dict>
@@ -154,7 +237,7 @@
 				<key>name</key>
 				<string>魔兽世界</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>WW</string>
 				<key>gameId</key>
 				<string>8</string>
 			</dict>
@@ -162,341 +245,9 @@
 				<key>name</key>
 				<string>其它</string>
 				<key>icon</key>
-				<string>dota2</string>
+				<string>others</string>
 				<key>gameId</key>
 				<string></string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>platformid</key>
-		<integer>5</integer>
-		<key>name</key>
-		<string>全民</string>
-		<key>bannerpic</key>
-		<string>quanmin</string>
-		<key>categories</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>DOTA2</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>dota2</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>英雄联盟</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>lol</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>炉石传说</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>heartstone</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>守望先锋</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>overwatch</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSGO</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>nizhan</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>王者荣耀</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>wangzhe</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>穿越火线</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>cfpc</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>魔兽世界</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>blizzard</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>其它</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string></string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>platformid</key>
-		<integer>0</integer>
-		<key>name</key>
-		<string>斗鱼</string>
-		<key>bannerpic</key>
-		<string>douyu</string>
-		<key>categories</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>DOTA2</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>3</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>英雄联盟</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>1</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>炉石传说</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>2</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>守望先锋</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>148</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSGO</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>6</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>王者荣耀</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>181</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>穿越火线</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>33</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>魔兽世界</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>5</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>其它</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string></string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>platformid</key>
-		<integer>1</integer>
-		<key>name</key>
-		<string>火猫</string>
-		<key>bannerpic</key>
-		<string>huomao</string>
-		<key>categories</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>DOTA2</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>23</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>英雄联盟</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>17</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>炉石传说</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>13</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>守望先锋</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>103</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSGO</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>20</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>王者荣耀</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>110</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>穿越火线</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<string>19</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>魔兽世界</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>39</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>其它</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>8</integer>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>platformid</key>
-		<integer>4</integer>
-		<key>name</key>
-		<string>虎牙</string>
-		<key>bannerpic</key>
-		<string>huya</string>
-		<key>categories</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>DOTA2</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>英雄联盟</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>炉石传说</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>守望先锋</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSGO</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>4</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>王者荣耀</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>5</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>穿越火线</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>6</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>魔兽世界</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>7</integer>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>其它</string>
-				<key>icon</key>
-				<string>dota2</string>
-				<key>gameId</key>
-				<integer>8</integer>
 			</dict>
 		</array>
 	</dict>

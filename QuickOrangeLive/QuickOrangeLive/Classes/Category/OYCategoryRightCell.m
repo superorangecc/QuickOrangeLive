@@ -63,14 +63,14 @@ static NSString *gameCategoryCellIdentifier = @"gameCategoryCellIdentifier";
     seperatorLabel.textColor = [UIColor darkGrayColor];
     self.seperatorLabel = seperatorLabel;
     
-    CGFloat gameCategoryCellMargin = 10;
-    CGFloat gameCategoryCellW = (self.contentView.bounds.size.width - 4 * gameCategoryCellMargin) / 3;
+    CGFloat gameCategoryCellMargin = 15;
+    CGFloat gameCategoryCellW = (self.contentView.bounds.size.width - 2 * gameCategoryCellMargin - 40) / 3;
     CGFloat gameCategoryCellH = gameCategoryCellW;
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.itemSize = CGSizeMake(gameCategoryCellW, gameCategoryCellH);
-    layout.minimumLineSpacing = 25;
+    layout.minimumLineSpacing = 30;
     layout.minimumInteritemSpacing = gameCategoryCellMargin;
-    layout.sectionInset = UIEdgeInsetsMake(30, 0, 0, 0);
+    layout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);
     
     UICollectionView *gameCategoryCollectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     gameCategoryCollectionView.backgroundColor = [UIColor whiteColor];
@@ -113,10 +113,10 @@ static NSString *gameCategoryCellIdentifier = @"gameCategoryCellIdentifier";
     }];
     
     [self.gameCategoryCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.seperatorLabel.mas_bottom);
-        make.left.equalTo(self.contentView).offset(10);
-        make.right.equalTo(self.contentView).offset(-10);
-        make.bottom.equalTo(self.contentView).offset(-58);
+        make.top.equalTo(self.seperatorLabel.mas_bottom).offset(10);
+        make.left.equalTo(self.contentView);
+        make.right.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView);
     }];
 
     

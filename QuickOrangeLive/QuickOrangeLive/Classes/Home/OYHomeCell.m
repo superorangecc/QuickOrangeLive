@@ -27,12 +27,12 @@
     return self;
 }
 
-- (void)setRoomListModel:(OYHomeRoomListModel *)roomListModel {
+- (void)setRoomListModel:(OYQuanMinLiveListModel *)roomListModel {
     _roomListModel = roomListModel;
-    [self.liveImageView sd_setImageWithURL:[NSURL URLWithString:roomListModel.live_img]];
-    [self.iconView sd_setImageWithURL:[NSURL URLWithString:roomListModel.live_userimg]];
-    self.liveNameLabel.text = roomListModel.live_title;
-    self.userNameLabel.text = roomListModel.live_nickname;
+    [self.liveImageView sd_setImageWithURL:[NSURL URLWithString:roomListModel.thumb]];
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString:roomListModel.avatar]];
+    self.liveNameLabel.text = roomListModel.title;
+    self.userNameLabel.text = roomListModel.nick;
 }
 
 - (void)setUI {

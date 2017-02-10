@@ -59,7 +59,6 @@
     [playerControl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -168,7 +167,7 @@
             
         case IJKMPMovieFinishReasonPlaybackError:
             NSLog(@"playbackStateDidChange: IJKMPMovieFinishReasonPlaybackError: %d\n", reason);
-            [SVProgressHUD showWithStatus:@"该视频流暂时无法播放，正在加紧抓取中..."];
+            [SVProgressHUD showWithStatus:@"很抱歉，该平台数据暂无，程序员正在紧张抓取数据中..."];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self onClickBack];
                 [SVProgressHUD dismiss];
